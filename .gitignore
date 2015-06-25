@@ -1,0 +1,13 @@
+.gradle
+/local.properties
+
+.DS_Store
+/build
+/captures
+#IntelliJ IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+classes
+gen-external-apklibs
