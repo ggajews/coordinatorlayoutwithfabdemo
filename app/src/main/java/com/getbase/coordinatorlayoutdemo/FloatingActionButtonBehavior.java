@@ -24,4 +24,11 @@ public class FloatingActionButtonBehavior extends CoordinatorLayout.Behavior<Flo
     child.setTranslationY(translationY);
     return true;
   }
+  
+  @Override
+  public void onDependentViewRemoved(CoordinatorLayout parent, FloatingActionButton child, View dependency) {
+    super.onDependentViewRemoved(parent, child, dependency);
+    child.setTranslationY(0);
+  }
+
 }
